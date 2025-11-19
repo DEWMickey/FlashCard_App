@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:paddingTop="20dp"
+    android:layout_margin="10dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/questionTest"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:background="@drawable/bordure_questionview"/>
+
+
+    <TextView
+        android:id="@+id/textViewReponse1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/questionText"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bordure_textview"
+        android:clickable="true"
+        android:text="Mercure"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:foreground="?attr/selectableItemBackground"/>
+
+    <TextView
+        android:id="@+id/textViewReponse2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/textViewReponse1"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Océan Pacifique"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:clickable="true"
+        android:background="@drawable/bordure_textview"
+        android:foreground="?attr/selectableItemBackground"/>
+
+    <TextView
+        android:id="@+id/textViewReponse3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/textViewReponse2"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="60dp"
+        android:text="Tokyo"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:clickable="true"
+        android:background="@drawable/bordure_textview"
+        android:foreground="?attr/selectableItemBackground"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewReponse3"
+        android:layout_centerHorizontal="true"
+        android:text="Next" />
+
+</RelativeLayout>
+
+
+
+
+<!--<TextView-->
+<!--android:id="@+id/repText1"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="200dp"-->
+<!--android:layout_marginBottom="60dp"-->
+<!--android:text="Donald Trump"-->
+<!--android:textAlignment="center"-->
+<!--android:textSize="40sp"-->
+<!--android:background="@drawable/bordure_questionview"/>-->
