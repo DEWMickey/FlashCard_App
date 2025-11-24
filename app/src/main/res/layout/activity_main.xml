@@ -1,38 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerHorizontal="true"
-    android:paddingTop="20dp"
     android:layout_margin="10dp"
+    android:fitsSystemWindows="true"
+    android:paddingTop="20dp"
     tools:context=".MainActivity">
 
 
     <TextView
         android:id="@+id/questionText"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
+        android:background="@drawable/bordure_questionview"
         android:text="@string/questionTest"
         android:textAlignment="center"
-        android:textSize="40sp"
-        android:background="@drawable/bordure_questionview"/>
+        android:textSize="40sp" />
 
 
     <TextView
         android:id="@+id/textViewReponse1"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:layout_below="@id/questionText"
         android:layout_marginBottom="8dp"
         android:background="@drawable/bordure_textview"
         android:clickable="true"
-        android:text="Mercure"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="ytr"
         android:textAlignment="center"
-        android:textSize="40sp"
-        android:foreground="?attr/selectableItemBackground"/>
+        android:textSize="40sp" />
 
     <TextView
         android:id="@+id/textViewReponse2"
@@ -41,12 +43,12 @@
         android:layout_below="@id/textViewReponse1"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
-        android:text="Océan Pacifique"
-        android:textSize="40sp"
-        android:textAlignment="center"
-        android:clickable="true"
         android:background="@drawable/bordure_textview"
-        android:foreground="?attr/selectableItemBackground"/>
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="ert"
+        android:textAlignment="center"
+        android:textSize="40sp" />
 
     <TextView
         android:id="@+id/textViewReponse3"
@@ -55,32 +57,40 @@
         android:layout_below="@id/textViewReponse2"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="60dp"
-        android:text="Tokyo"
-        android:textSize="40sp"
-        android:textAlignment="center"
-        android:clickable="true"
         android:background="@drawable/bordure_textview"
-        android:foreground="?attr/selectableItemBackground"/>
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:text="ewr"
+        android:textAlignment="center"
+        android:textSize="40sp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonNext"
         android:layout_width="115dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/textViewReponse3"
         android:layout_centerHorizontal="true"
         android:text="Next" />
 
+    <Button
+        android:id="@+id/buttonAjout"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_plus_svg"
+        android:text="." />
+
+    <TextView
+        android:id="@+id/textViewCongrats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/buttonNext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/green"
+        android:textStyle="italic"
+        android:textSize="19sp"/>
+
 </RelativeLayout>
-
-
-
-
-<!--<TextView-->
-<!--android:id="@+id/repText1"-->
-<!--android:layout_width="match_parent"-->
-<!--android:layout_height="200dp"-->
-<!--android:layout_marginBottom="60dp"-->
-<!--android:text="Donald Trump"-->
-<!--android:textAlignment="center"-->
-<!--android:textSize="40sp"-->
-<!--android:background="@drawable/bordure_questionview"/>-->
