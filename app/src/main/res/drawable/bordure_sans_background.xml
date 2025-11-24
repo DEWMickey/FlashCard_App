@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
 
-</selector>
+    <!-- Couleur de fond du TextView (optionnel) -->
+    <!-- Si vous ne voulez pas de fond, vous pouvez supprimer cette ligne -->
+    <solid android:color="#F5F5F5" />
+
+    <!-- Bordure (stroke) -->
+    <!-- Épaisseur de la bordure android:width="2dp"-->
+    <stroke
+        android:width="2dp"
+        android:color="#888888" />   <!-- Couleur de la bordure -->
+
+    <!-- Coins arrondis (optionnel) -->
+    <!-- Si vous voulez des coins carrés, supprimez cette section -->
+    <corners android:radius="8dp" />  <!-- Rayon de l'arrondi des coins -->
+
+    <!-- Espacement interne (padding) -->
+    <!-- Ceci ajoute de l'espace entre la bordure et le texte -->
+    <padding
+        android:left="10dp"
+        android:bottom="10dp" />
+
+</shape>
