@@ -11,19 +11,19 @@
     android:layout_marginLeft="20dp"
     android:layout_marginRight="20dp">
 
-<!--    <Button-->
-<!--        android:id="@+id/buttonBack"-->
-<!--        android:layout_width="48dp"-->
-<!--        android:layout_height="48dp"-->
-<!--        android:background="@drawable/back_buttons"-->
-<!--        android:text="."/>-->
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/back_buttons"
+        android:text="."/>
 
     <Button
         android:id="@+id/buttonSave"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
         android:background="@drawable/save_new_card"
         android:text=".." />
 
@@ -33,6 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonBack"
 
 
         android:padding="10dp"
@@ -109,18 +110,6 @@
         android:hint="Tape your 3rd answer here !"
         android:textSize="17sp"
         android:textStyle="italic"/>
-
-    <TextView
-        android:id="@+id/CongratView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_alignParentTop="true"
-        android:padding="8dp"
-        android:text=""
-        android:textStyle="italic"
-        android:textColor="@color/green" />
-
 
 </RelativeLayout>
 
