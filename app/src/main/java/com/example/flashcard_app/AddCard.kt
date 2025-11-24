@@ -7,6 +7,8 @@ import android.widget.EditText
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import android.app.Activity // << IMPORT pour passing donnees
+import android.view.Gravity
+import android.widget.Toast
 
 class AddCard : AppCompatActivity() {
 
@@ -22,6 +24,12 @@ class AddCard : AppCompatActivity() {
             saveData()
         }
 
+        // Cancel and back to main
+        findViewById<Button>(R.id.buttonBack).setOnClickListener {
+            setResult(Activity.RESULT_CANCELED) // On annule si les champs sont vides
+            finish() // On ferme l'activité
+        }
+
     }
 
     private fun saveData() {
@@ -30,9 +38,10 @@ class AddCard : AppCompatActivity() {
         val answer2 = findViewById<EditText>(R.id.editSimpleReponseText2).text.toString()
         val answer3 =  findViewById<EditText>(R.id.editSimpleReponseText3).text.toString()
 
-        if (question.isBlank() || answer1.isBlank()) {
-            setResult(Activity.RESULT_CANCELED) // On annule si les champs sont vides
-            finish() // On ferme l'activité
+        if (question.isBlank() || answer1.isBlank() || answer2.isBlank()|| answer3.isBlank() ) {
+            val toast = Toast.makeText(applicationContext, "Tous les champs sont required !!!", Toast.LENGTH_SHORT)
+            toast.setGravity(Gravity.BOTTOM, 0, 0)
+            toast.show()
             return
         }
 
